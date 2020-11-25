@@ -49,13 +49,6 @@ header h2 {
   flex-direction: row;
   column-gap: 2vw;
 }
-.dropdown {
-  color: whitesmoke;
-  position: relative;
-  top: -8px;
-  font-size: 1vw;
-}
-
 .post-button {
   height: 2vw;
 }
@@ -69,6 +62,9 @@ header h2 {
 .header {
   color: rgb(150, 128, 128);
   font-size: 2vw;
+}
+.news-content {
+  color: white;
 }
 .item-three {
   grid-column: 3;
