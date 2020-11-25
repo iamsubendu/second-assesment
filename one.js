@@ -12,26 +12,8 @@ btn.onclick= function () {
   console.log(head);
   console.log(content);
 
-  if (head && content) {
-    localStorage.setItem(head,content);
-    location.reload();
-  }
+  localStorage.setItem("title",`${head}`);
+  localStorage.setItem("article",`${content}`);
+
+  document.getElementsByClassName("news-content").innerHTML = localStorage.getItem("title");
 };
-
-for( var i = 0; i < localStorage.length; i++) {
-  const item = localStorage.item(i);
-  const value = localStorage.getItem(item);
-
-  news.innerHTML = value.map(data=> {
-     `
-                    <div class="content-box">
-											<span class="details">
-                        <b>
-                          <p>${data.item}</p>
-                          <p>${data.value}</p>
-									      </b>
-                      </span>
-			              </div>
-                  `;
-  })
-}
