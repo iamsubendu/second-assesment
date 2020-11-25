@@ -58,6 +58,7 @@ header h2 {
   padding: 1vw;
   display: flex;
   flex-direction: column;
+  color: aliceblue;
 }
 .header {
   color: rgb(150, 128, 128);
@@ -72,6 +73,7 @@ header h2 {
   border: 1px solid rgb(56, 52, 52);
   padding: 1vw;
   margin: 5px;
+  color: aliceblue;
 }
 .item-four {
   grid-column: 3;
@@ -79,4 +81,5 @@ header h2 {
   border: 1px solid rgb(56, 52, 52);
   padding: 1vw;
   margin: 5px;
+  color: aliceblue;
 }
