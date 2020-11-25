@@ -1,8 +1,8 @@
-var title = document.querySelector("addArticleTitle");
-var text = document.querySelector("addArticle");
-const btn = document.querySelector("post-button");
-var news = document.querySelector("news-content");
-var fun = document.querySelector("fun-content");
+var title = document.querySelector(".addArticleTitle");
+var text = document.querySelector(".addArticle");
+var btn = document.querySelector(".post-button");
+var news = document.querySelector(".news-content");
+var fun = document.querySelector(".fun-content");
 
 
 btn.onclick= function () {
@@ -18,3 +18,20 @@ btn.onclick= function () {
   }
 };
 
+for( var i = 0; i < localStorage.length; i++) {
+  const item = localStorage.item(i);
+  const value = localStorage.getItem(item);
+
+  news.innerHTML = value.map(data=> {
+     `
+                    <div class="content-box">
+											<span class="details">
+                        <b>
+                          <p>${data.item}</p>
+                          <p>${data.value}</p>
+									      </b>
+                      </span>
+			              </div>
+                  `;
+  })
+}
