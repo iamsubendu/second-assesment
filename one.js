@@ -44,8 +44,8 @@ btn.onclick= function () {
       newsCount += 1;
       itemTwo.innerHTML += `
 					<div class="content">
-            <h2>${id2.title}</h2>
-            <img src="http://lorempixel.com/300/300/" alt="new-image">
+            <b id="title"><p>${id2.title}</p></b>
+            <img src="http://lorempixel.com/400/200/sports/${i}/" >
 						<p>${id2.article}</p>
           </div>
           `;
@@ -54,8 +54,8 @@ btn.onclick= function () {
       funCount += 1;
       itemFour.innerHTML += `
 					<div class="content">
-            <h2>${id2.title}</h2>
-            <img src="http://lorempixel.com/300/300/" alt="new-image">
+            <b><p id="title">${id2.title}</p></b>
+            <img src="http://lorempixel.com/400/200/people/${i}/" >
 						<p>${id2.article}</p>
           </div>
           `;

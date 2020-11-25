@@ -30,6 +30,7 @@ header h2 {
   margin: 5px;
   display: flex;
   flex-direction: column;
+  height: 35vw;
 }
 .addArticleTitle {
   padding: 1vw;
@@ -59,6 +60,8 @@ header h2 {
   display: flex;
   flex-direction: column;
   color: aliceblue;
+  height: 35vw;
+  overflow-y: scroll;
 }
 .header {
   color: rgb(150, 128, 128);
@@ -74,6 +77,7 @@ header h2 {
   padding: 1vw;
   margin: 5px;
   color: aliceblue;
+  height: 15vw;
 }
 .item-four {
   grid-column: 3;
@@ -82,4 +86,20 @@ header h2 {
   padding: 1vw;
   margin: 5px;
   color: aliceblue;
+  overflow-y: scroll;
+}
+#title {
+  font-size: 2vw;
+  color: rgb(130, 152, 172);
+}
+.content {
+  border: 1px solid rgb(54, 46, 46);
+  padding: 1vw;
+}
+.content img {
+  width: 5vw;
+  height: 5vw;
+  float: right;
+  position: relative;
+  top: -70px;
 }
